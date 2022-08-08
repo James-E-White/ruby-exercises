@@ -30,7 +30,7 @@ These exercises focus on these two types of operations.
 - `baby_spec.rb`
 - `kid_spec.rb`
 - `beers_spec.rb`
-- `teenager_spec.rb`
+- `teenager_spec.rb` Not there
 - `adult_spec.rb`
 - `roll_call_spec.rb`
 - `santa_spec.rb`
