@@ -1,40 +1,25 @@
-class Child
- attr_reader :name, :age
+class Children < Array
 
- def initialize
+    def eldest
+        self.max_by {|child| child.age}
+    end
+
+end
+
+class Child
+ attr_accessor :name, :age
+
+ def initialize(name, age)
      @name = name
      @age = age
  end
 
-end
-
-klaus = Child.new
-p klaus
-
-
-
-
-
-
-
-
-#class Children < Array
-#  def eldest
-#    self.max_by {|child| child.age}
-  end
-
-end
-#class Child
-#  attr_reader :name, :age
-
- #def initialize(name, age)
-#    @name
-#    @age
- end
-
 
 end
 
-#children = Children.new
-#children << Child.new('Brad', 8)
-#p children.eldest.name
+children = Children.new
+children << Child.new('Sarah', 5)
+children << Child.new('Robert', 2)
+children << Child.new('Fran', 8)
+children << Child.new('Hilbert', 4)
+p children.eldest.name
