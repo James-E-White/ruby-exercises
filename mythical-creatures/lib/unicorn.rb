@@ -14,4 +14,3 @@ def say(message)
    "**;* #{message} **;*"
   end
 end
- 
