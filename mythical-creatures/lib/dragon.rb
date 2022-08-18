@@ -1,28 +1,38 @@
 class Dragon
-attr_reader :name, :color, :rider, :is_hungry
-  def initialize(name, color, rider)
+
+attr_reader :name, :color, :rider
+
+def initialize (name, color, rider)
    @name = name
    @color = color
    @rider = rider
-   @is_hungry = true
    @eat = 0
+   @hungry = true
   end
 
+def hungry?
+  @hungry
+end
 
   def eat
-   @eatan += 0
-   if @eatan >= 4
-   @is_hungry = false
+    @eat += 1
+if @eat >= 3
+   @hungry = false
+      end
+   # @hunger += 1
+   # if @hunger >= 4
+   #  @hungry = false
 
   end
- end
-
 end
-ramoth = Dragon.new('Ramoth', 'gold', 'Lessa')
-p ramoth.name
-p ramoth.color
-p ramoth.rider
-p ramoth.is_hungry
-p ramoth.eat
-p ramoth.eat
-p ramoth.is_hungry
+
+
+#dragon = Dragon.new('Mnementh', 'gold', 'Lessa')
+#p mnementh.color
+#p mnementh.rider
+#p mnementh.hungry?
+#p mnementh.eat
+#p mnementh.eat
+# p mnementh.eat
+# p mnementh.eat
+# p mnementh.hungry?
