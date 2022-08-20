@@ -5,6 +5,7 @@ RSpec.describe Wizard do
   it 'has a name' do
     wizard = Wizard.new('Eric')
     expect(wizard.name).to eq('Eric')
+
   end
 
   it 'has a different name' do
