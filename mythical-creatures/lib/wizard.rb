@@ -2,7 +2,7 @@ class Wizard
 attr_reader :name, :bearded
 def initialize(name,bearded = true, rested = false)
   @name = name
-  @rested = 0
+  @cast = 0
  end
 
  def bearded?
@@ -18,7 +18,7 @@ def initialize(name,bearded = true, rested = false)
    end
 
    def rested?
-   if @cast <3
+   if @cast <=3
      true
    else
      false
@@ -27,18 +27,7 @@ def initialize(name,bearded = true, rested = false)
 
    def cast
      @rested += 1
-     "Hellfire"
+    spell = "MAGIC MISSILE!"
    end
 
 end
-
-eric = Wizard.new("Eric")
-p eric.name
-
-alex = Wizard.new("Alex")
-p alex.name
-p alex.bearded
-
-ben = Wizard.new("Ben")
-p ben.name
-p ben.bearded
